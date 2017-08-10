@@ -1,0 +1,30 @@
+ 
+sudo -umysql mysql_install_db --user=mysql --basedir=/usr --datadir=/var/lib/mysql
+
+
+su - gitlab -s /bin/sh -c "cd '/usr/share/webapps/gitlab'; bundle-2.3 exec rake gitlab:setup RAILS_ENV=production"
+#change 
+sudo -u gitlab /bin/bash -c "cd '/usr/share/webapps/gitlab'; bundle-2.3 exec rake gitlab:setup RAILS_ENV=production"
+
+sudo systemctl daemon-reload
+
+sudo systemctl daemon-reload
+
+journalctl -f &
+
+tail -f YOUR_SERVER_FQDN_error.log
+
+grep -n gitlab
+
+top -d1
+
+kill
+
+balooctl disable
+
+ps
+ps -a
+
+nanjing 
+ip  192.168.18.100
+password    ll
